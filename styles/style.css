@@ -1,4 +1,5 @@
 .header {
+  border: 1px solid red;
     display: grid;
     grid-template-columns: auto auto 1fr;
     align-items: center;
@@ -229,20 +230,20 @@
     font-size: 20px;
     cursor: pointer;
     display: block; 
-    position: absolute;
     top: 100%; 
     margin-top: 30px;
   }
+
   .about {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    margin: 181px 24px 13px 24px;
-    padding: 0 50px 0 47px;
+    margin: 135px 0px 0px 75px;
+    padding: 0;
     max-width: 1052px;
-    max-height: 595px;
     box-sizing: border-box;
   }
+
   .about__content {
     display: flex;
     align-items: center;
@@ -260,7 +261,6 @@
     max-width: 240px;
     justify-content: center;
     align-items: start;
-    position: relative;
     box-sizing: border-box;
   }
   
@@ -287,7 +287,7 @@
     display: flex;
     flex-direction: column;
     padding-left: 71px;
-    box-sizing: border-box;
+    box-sizing: border-box; 
   }
   
   .about__title {
@@ -303,10 +303,10 @@
   .about__text {
     margin-bottom: 24px;
     font-size: 20px;
-    white-space: pre-wrap;
-    white-space: nowrap;
-    overflow-wrap: normal;
     line-height: 1.2;
+    max-width: 688px;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
   }
   
   .about__text:last-of-type {
@@ -314,7 +314,7 @@
   }
   
   .footer {
-    margin: 200px 50px 88px 50px;
+    margin: 180px 50px 88px 50px;
     display: flex;
     align-items: flex-start;
     width: 100%;
